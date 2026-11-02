@@ -1,0 +1,14 @@
+{
+  "name": "nano-claude-code-js",
+  "version": "0.2.0",
+  "description": "Bản JavaScript rút gọn của vòng lặp agent trong nano-claude-code (để đọc và học)",
+  "type": "module",
+  "bin": { "nano-js": "src/cli.js" },
+  "scripts": {
+    "demo": "node src/cli.js --mock --show-payload --yes --cwd demo",
+    "demo:agent": "node src/cli.js --mock --show-payload --yes --cwd demo \"Dùng sub-agent đọc task.txt giúp tôi\"",
+    "chat:mock": "node src/cli.js --mock --yes --cwd demo -i",
+    "start": "node src/cli.js"
+  },
+  "engines": { "node": ">=18.3" }
+}
